@@ -1,0 +1,28 @@
+<style>
+  #wrapper {
+    padding: 50px;
+  }
+  #question {
+    border-left: 3px solid #EFEFEF;
+    width: 400px;
+    margin: auto;
+    padding: 0px 20px;
+  }
+  #coach_answer {
+    border-left: 3px solid #EFEFEF;
+    width: 400px;
+    margin: auto;
+    padding: 0px 20px;
+  }
+</style>
+<div id="wrapper" class="text-center">
+  <div id="question">
+    <p><strong><%=@your_message%></strong></p>
+    <p style="color: grey"> - You</p>
+  </div>
+  <div id="coach_answer">
+    <p><strong><%=@response%></strong></p>
+    <p style="color: grey"> - Your answer</p>
+  </div>
+  <%= link_to "Ask another question", "/ask" %>
+</div>
